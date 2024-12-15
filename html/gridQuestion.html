@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 700px;
+            align-items: center;
+            width: 700px;
+            background-color: lightblue;
+        }
+        .row1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100%;
+            align-items: center;
+            /* grid-gap: 10px; */
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            background-color: lightpink;
+        }
+        .row2{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            /* grid-template-rows: 1fr; */
+            height: 100%;
+            align-items: center;
+            /* grid-gap: 10px; */
+            background-color: yellow;
+        }
+        .main{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .row3{
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="row1">
+            <div style="background-color: aqua;  height: 100%; width: 100%;">A</div>
+            <div style="background-color: green;  height: 100%;">B</div>
+            <div style="background-color: red; height: 100%; ">C</div>
+        </div>
+        <div class="row2">
+            <div style="background-color: blue; height: 100%; ">D</div>
+            <div class="main">
+                <div style="background-color: coral;">E1</div>
+                <div style="background-color: cornflowerblue;">E2</div>
+                <div style="background-color: cornsilk;">E3</div>
+                <div style="background-color: crimson;">E4</div>
+            </div>
+        </div>
+        <div class="row3">
+            <div style="background-color: cyan;">F</div>
+            <div style="background-color: darkblue;">G</div>
+            <div style="background-color: darkcyan;">H</div>
+            <div style="background-color: darkgrey;">I</div>
+            <div style="background-color: darkgoldenrod;">J</div>
+            <div style="background-color: darksalmon;">K</div>
+        </div>
+    </div>
+</body>
+</html>

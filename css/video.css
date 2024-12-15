@@ -1,0 +1,41 @@
+.videos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+.video{
+    width: 300px;
+    padding: 10px 5px;
+    height: 300px;
+}
+.video-image{
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    padding: 2px 4px;
+}
+.video-image img{
+    width: 300px;
+}
+.channel-logo{
+    width: 30px;
+    margin-top: 20px;
+}
+.video-description{
+    display: grid;
+    align-items:flex-start;
+    grid-template-columns: 30px 1fr;
+}
+.video-stat{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
